@@ -20,7 +20,9 @@ public class DashboardFragment extends Fragment {
 
     private RecyclerView mRecyclerView;
     private AdapterItem mAdapterItem;
-    private String[] items = {"Demo","Dhaka","Genusys","Home Office","HR & Admin","PBX_MP","Technical","Undefined"};
+    private String[] items = {"Demo","Dhaka","Genusys","Home Office","HR & Admin","PBX_MP","Technical","Undefined","Lab Plexstar"};
+
+
 
     public DashboardFragment() {
         // Required empty public constructor
@@ -45,9 +47,9 @@ public class DashboardFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
         mAdapterItem = new AdapterItem(getActivity(), Arrays.asList(items));
         mRecyclerView.setAdapter(mAdapterItem);
+
 
         return view;
     }

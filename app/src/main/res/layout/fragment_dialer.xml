@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_dialer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/keypadColor"
+    android:layout_marginBottom="40dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight=".4"
+            />
+
+
+        <TextView
+            android:id="@+id/text_view_display"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="PHONE NUMBER"
+            android:inputType="phone"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/grid_layout_keypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:columnCount="3"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:rowCount="5"
+        android:rowOrderPreserved="false"
+        android:textAlignment="center"
+        android:scrollIndicators="none"
+
+        >
+
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="1"
+            android:layout_margin="4dp"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+
+        <Button
+            android:id="@+id/button_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_pound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="#"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+
+        <Button
+            android:id="@+id/button_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="a"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@drawable/keypadbutton_background"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+    </GridLayout>
+
+</LinearLayout>
+
+
+
+

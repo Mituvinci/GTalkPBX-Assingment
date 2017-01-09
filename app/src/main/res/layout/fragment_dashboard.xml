@@ -3,48 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:orientation="vertical"
+    android:background="#175469"
+    android:layout_marginBottom="40dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.gsl.gsl.gtalkpbx.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
         android:id="@+id/recycler"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </android.support.v7.widget.RecyclerView>
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#175469"
-        android:orientation="horizontal"
-        android:weightSum="4"
-        >
-        <ImageView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_menu_gallery"
-        android:layout_weight="1"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_menu_gallery"
-            android:layout_weight="1"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_menu_gallery"
-            android:layout_weight="1"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_menu_gallery"
-            android:layout_weight="1"/>
+        android:orientation="horizontal"
+        android:weightSum="5">
 
-    </LinearLayout>
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#33B5E3"
+            android:id="@+id/imageButtonItemList"
+            android:src="@drawable/ic_menu_gallery" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/imageButtonBackgroundColor"
+            android:id="@+id/imageButtonDialer"
+            android:src="@drawable/ic_menu_gallery" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:id="@+id/imageButtonCallLog"
+            android:background="@color/imageButtonBackgroundColor"
+            android:src="@drawable/ic_menu_gallery" />
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:id="@+id/imageButtonContactList"
+            android:background="@color/imageButtonBackgroundColor"
+            android:src="@drawable/ic_menu_gallery" />
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:id="@+id/imageButtonNotification"
+            android:background="@color/imageButtonBackgroundColor"
+            android:src="@drawable/ic_menu_gallery" />
+
+    </LinearLayout>-->
 </LinearLayout>
