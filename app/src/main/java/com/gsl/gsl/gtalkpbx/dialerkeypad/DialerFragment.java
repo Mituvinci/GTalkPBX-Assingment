@@ -1,4 +1,4 @@
-package com.gsl.gsl.gtalkpbx.fragments;
+package com.gsl.gsl.gtalkpbx.dialerkeypad;
 
 
 import android.app.Fragment;
@@ -12,10 +12,10 @@ import com.gsl.gsl.gtalkpbx.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CallLoggFragment extends Fragment {
+public class DialerFragment extends Fragment {
 
 
-    public CallLoggFragment() {
+    public DialerFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,9 @@ public class CallLoggFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_call_logg, container, false);
+        View view = inflater.inflate(R.layout.fragment_dialer, container, false);
+
+        return  view;
     }
 
 }

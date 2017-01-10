@@ -1,13 +1,27 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gsl.gsl.gtalkpbx.fragments.ContactListFragment">
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginBottom="40dp"
+    tools:context="com.gsl.gsl.gtalkpbx.contactlist.ContactListFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:hint="Search For Contacts"
+        android:padding="8dp" />
 
-</FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewContactList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

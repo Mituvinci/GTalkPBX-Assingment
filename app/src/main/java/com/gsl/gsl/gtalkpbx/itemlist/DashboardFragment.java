@@ -1,4 +1,4 @@
-package com.gsl.gsl.gtalkpbx.fragments;
+package com.gsl.gsl.gtalkpbx.itemlist;
 
 
 import android.app.Fragment;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.gsl.gsl.gtalkpbx.R;
-import com.gsl.gsl.gtalkpbx.adapter.AdapterItem;
+import com.gsl.gsl.gtalkpbx.itemlist.adapter.AdapterItem;
 
 import java.util.Arrays;
 

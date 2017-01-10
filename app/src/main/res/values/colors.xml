@@ -7,4 +7,6 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="keypadColor">#0E446E</color>
+    <color name="blueTextColor">#295B80</color>
+    <color name="ashTextColor">#959595</color>
 </resources>

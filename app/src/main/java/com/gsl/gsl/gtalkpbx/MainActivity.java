@@ -16,10 +16,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.gsl.gsl.gtalkpbx.fragments.CallLoggFragment;
-import com.gsl.gsl.gtalkpbx.fragments.DashboardFragment;
-import com.gsl.gsl.gtalkpbx.fragments.DialerFragment;
-import com.gsl.gsl.gtalkpbx.fragments.NotificationFragment;
+import com.gsl.gsl.gtalkpbx.calllogg.CallLoggFragment;
+import com.gsl.gsl.gtalkpbx.contactlist.ContactListFragment;
+import com.gsl.gsl.gtalkpbx.itemlist.DashboardFragment;
+import com.gsl.gsl.gtalkpbx.dialerkeypad.DialerFragment;
+import com.gsl.gsl.gtalkpbx.notification.NotificationFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -121,7 +122,7 @@ public class MainActivity extends AppCompatActivity
                 mImageButtonItemList.setBackgroundColor(Color.parseColor("#175469"));
                 mImageButtonCallLog.setBackgroundColor(Color.parseColor("#175469"));
                 mImageButtonNotification.setBackgroundColor(Color.parseColor("#175469"));
-                Fragment fragment = new CallLoggFragment();
+                Fragment fragment = new ContactListFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.containerHome, fragment);

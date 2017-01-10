@@ -1,4 +1,4 @@
-package com.gsl.gsl.gtalkpbx.fragments;
+package com.gsl.gsl.gtalkpbx.notification;
 
 
 import android.app.Fragment;
@@ -12,10 +12,10 @@ import com.gsl.gsl.gtalkpbx.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DialerFragment extends Fragment {
+public class NotificationFragment extends Fragment {
 
 
-    public DialerFragment() {
+    public NotificationFragment() {
         // Required empty public constructor
     }
 
@@ -24,9 +24,7 @@ public class DialerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_dialer, container, false);
-
-        return  view;
+        return inflater.inflate(R.layout.fragment_notification, container, false);
     }
 
 }

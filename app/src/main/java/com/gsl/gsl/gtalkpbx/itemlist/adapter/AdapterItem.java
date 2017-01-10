@@ -1,4 +1,4 @@
-package com.gsl.gsl.gtalkpbx.adapter;
+package com.gsl.gsl.gtalkpbx.itemlist.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -33,7 +33,7 @@ public class AdapterItem extends RecyclerView.Adapter<AdapterItem.CustomViewHold
 
     @Override
     public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_item_list_layout,parent,false);
         CustomViewHolder customViewHolder = new CustomViewHolder(view);
         return customViewHolder;
     }
